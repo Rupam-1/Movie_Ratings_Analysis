@@ -1,6 +1,6 @@
 ## Movie Ratings Analysis
 
-Project Overview
+# Project Overview
 
 This project analyzes movie ratings using a dataset containing details about various movies, including their year, duration, rating, genre, director, and actors. The script performs data preprocessing, cleanup, and statistical analysis to extract meaningful insights about the trends in movie ratings.
 
