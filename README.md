@@ -7,12 +7,6 @@
 
 Welcome to the **Movie Ratings Analysis** repository! This project analyzes movie ratings using a dataset containing details about various movies, including their year, duration, rating, genre, director, and actors. The script performs data preprocessing, cleanup, and statistical analysis to extract meaningful insights about trends in movie ratings.
 
-## Contents
-
-1. [Project Documentation](#) *(Add Link Here)*
-2. [Dataset (IMDb_Movies_India.csv)](#) *(Add Link Here)*
-3. [Script File (movie_analysis.py)](#) *(Add Link Here)*
-
 ## Project Overview
 
 - **Objective**: Analyze and extract insights from a dataset of movie ratings.
@@ -75,13 +69,18 @@ pip install pandas
 To use this module in your project, follow these steps:
 
 ```python
-from Assignment1.file_read import final_results
+import sys
+import os
 
-file_path = "C:\\Users\\RUPAM\\Downloads\\IMDb_Movies_India.csv"
-results = final_results(file_path)
+module_path = "<**Path where you have cloned this repo**>"
+if module_path not in sys.path:
+    sys.path.append(module_path)
 
-for key, value in results.items():
-    print(f"{key}:\n{value}\n")
+from <**Directory name where this repo has been cloned**> import movie_analysis_module as module
+
+file_path = "<**Path to the csv file**>"
+results = module.final_results(file_path)
+print(results))
 ```
 
 ## Project Structure
@@ -89,7 +88,7 @@ for key, value in results.items():
 ```
 ├── movie_analysis.py  # Main script for data processing and analysis
 ├── README.md          # Documentation
-└── IMDb_Movies_India.csv  # Dataset (not included in repo)
+└── IMDb_Movies_India.csv  # Dataset
 ```
 
 ## Example Output
@@ -113,15 +112,6 @@ for key, value in results.items():
 }
 ```
 
-## Contribution
-
-Feel free to contribute by opening issues or submitting pull requests. Your feedback and suggestions are appreciated.
-
 ## Contact
 
-For any questions or inquiries, please email me at [your-email@example.com](mailto:your-email@example.com)
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
+For any questions or inquiries, please email me at [patwarirupam@gmail.com](mailto:your-email@example.com)
